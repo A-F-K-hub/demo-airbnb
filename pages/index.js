@@ -10,7 +10,7 @@ export default function Home({ exploreData, cardsData }) {
   return (
     <div className="">
       <Head>
-        <title>BYAM Real Estate</title>
+        <title>AFK-Airbnb</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -57,8 +57,8 @@ export default function Home({ exploreData, cardsData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("https://links.papareact.com/pyp").then(
-    (res) => res.json()
+  const exploreData = await fetch("https://jsonkeeper.com/b/6FP9").then((res) =>
+    res.json()
   );
 
   const cardsData = await fetch("https://links.papareact.com/zp1").then((res) =>
